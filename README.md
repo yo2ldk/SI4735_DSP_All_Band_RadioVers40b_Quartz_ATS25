@@ -6,10 +6,15 @@ This firmware is for SI4735 with cristal Quarz Osc.
 Special thanks to:  
  
 Ricardo Lima Caratti - PU2CLR - for library and Facebook group support;
+
 Gert Baak - PE0MGB - for his firmware; which is the basis of the other versions ;
+
 Mr. Binns - for excellent and so nice retro page;
+
 Antonino Russo - IU4ALH my friend, - for his work to add Full RDS support;
+
 Jim Yasuda - for the nice 3D buttons 
+
 and to all  who have contributions to the development of this beautiful project.
 
 my best regards and 73 too all !
