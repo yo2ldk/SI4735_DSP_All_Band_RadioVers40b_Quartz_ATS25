@@ -5614,39 +5614,39 @@ void displSETUP() {
 
   switch (pageSetup) {
     case 0:
-      tft.drawString("SI473X", 480 + d, 40);
+      tft.drawString("SI473X", 240 + d, 40);
       displSETUPitem     ("FM start 64 MHz  ", 80,  prevVHFon, (VHFon != prevVHFon));
       displSETUPitem     ("Seek AM 1 KHz    ", 120,  prevseekAccuracy, (seekAccuracy != prevseekAccuracy));
       break;
     case 1:
-      tft.drawString("USAGE", 480 + d, 40);
+      tft.drawString("USAGE", 240 + d, 40);
       displSETUPitem     ("RDS only FMbutton", 40,  !prevRDSalways, (RDSalways != prevRDSalways));
       displSETUPitem     ("Digit backlight  ", 80,  prevdigitLigth, (digitLigth != prevdigitLigth));
       displSETUPitem     ("Memo in preset   ", 120, prevmemoPreset, (memoPreset != prevmemoPreset));
       displSETUPitem     ("Retro language RU", 160, !prevlangRetroEN, (langRetroEN != prevlangRetroEN));
       break;
     case 2:
-      tft.drawString("DISPLAY", 480 + d, 40);
+      tft.drawString("DISPLAY",240 + d, 40);
       displSETUPitem     ("Screen saver     ", 40,  prevsaverOn, (saverOn != prevsaverOn));
       displSETUPitem     ("Display light off", 80,  prevdisplayOff, (displayOff != prevdisplayOff));
       displSETUPitemValue("Saver time in min", 120, String(prevsaverTime), (saverTime != prevsaverTime));
       displSETUPitem     ("Vertical screen  ", 160, prevscreenV, (screenV != prevscreenV));
       break;
     case 3:
-      tft.drawString("SCAN", 480 + d, 40);
+      tft.drawString("SCAN", 240 + d, 40);
       displSETUPitemValue("Minimum scale    ", 40,  String("x" + String(int(1 / prevminSCANstep))), (minSCANstep != prevminSCANstep));
       displSETUPitemValue("Maximum scale    ", 80,  String("1:" + String(int(prevmaxSCANstep))), (maxSCANstep != prevmaxSCANstep));
       displSETUPitem     ("Auto scale       ", 120, prevautoSCANstep, (autoSCANstep != prevautoSCANstep));
       displSETUPitem     ("Scan accuracy    ", 160, prevSCANaccuracy, (SCANaccuracy != prevSCANaccuracy));
       break;
     case 4:
-      tft.drawString("HARDWARE", 480 + d, 40);
+      tft.drawString("HARDWARE", 240 + d, 40);
       displSETUPitem     ("Battery show     ", 80,  prevbatShow, (batShow != prevbatShow));
       displSETUPitem     ("Beeper On        ", 120, prevbeeperOn, (beeperOn != prevbeeperOn));
       displSETUPitem     ("Bright disp power", 160, prevdisplayPower, (displayPower != prevdisplayPower));
       break;
     case 5:
-      tft.drawString("DEFAULT", 480 + d, 40);
+      tft.drawString("DEFAULT", 240 + d, 40);
       displSETUPitem     ("Load default Memo", 80,  prevloadMemory, (loadMemory != prevloadMemory));
       displSETUPitem     ("Reset to factory ", 120, prevloadDefault, (loadDefault != prevloadDefault));
       break;
